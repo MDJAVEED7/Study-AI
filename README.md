@@ -1,6 +1,6 @@
 # Study AI
 
-Study AI is an AI-powered learning platform that transforms raw documents into structured learning assets — including quizzes, flashcards, summaries, and focused Q&A — enabling active learning instead of passive reading.
+Study AI is an AI-powered learning platform that transforms raw documents into structured learning assets — including quizzes, flashcards, summaries, and focused Q&A — enabling active learning and deep comprehension.
 
 Unlike generic AI tools, all outputs in Study AI are strictly grounded in the uploaded document, ensuring accuracy, relevance, and explainability.
 
@@ -9,8 +9,7 @@ This project was built to explore production-grade AI integration with real-worl
 **Frontend (Live):** https://study-ai-frontend-theta.vercel.app/login  
 **Backend (API):** https://study-ai-backend.onrender.com  
 
-The backend is hosted on Render’s free tier, so the server may take 30–60 seconds to wake up.  
-If the app doesn’t load immediately, please wait a moment and refresh.
+> The backend is hosted on Render's free tier, so the server may take 30–60 seconds to wake up. If the app doesn't load immediately, please wait a moment and refresh.
 
 ---
 
@@ -78,26 +77,22 @@ If the app doesn’t load immediately, please wait a moment and refresh.
 
 ## Tech Stack
 
-**Frontend**
-
+### Frontend
 - React
 - Redux Toolkit
 - Tailwind CSS
 
-**Backend**
-
+### Backend
 - Node.js
 - Express.js
 - MongoDB (Mongoose)
 
-**Cloud & AI**
-
+### Cloud & AI
 - ImageKit (file storage)
 - Gemini API (AI content generation)
 - Custom chunking and relevance filtering logic
 
-**Engineering Practices**
-
+### Engineering Practices
 - RESTful API design
 - JWT authentication
 - Modular architecture
@@ -108,55 +103,83 @@ If the app doesn’t load immediately, please wait a moment and refresh.
 
 ## Installation & Setup
 
-1. **Clone the repository**
+### 1. Clone the Repository
 
-   ```bash
-   git clone https://github.com/sanskritiigarg/Notes-Drill.git
-   cd Notes-Drill
-   Install Dependencies
+```bash
+git clone https://github.com/MDJAVEED7/Study-AI.git
+cd Study-AI
+```
 
-# Frontend
+### 2. Install Dependencies
+
+**Frontend:**
+```bash
 cd frontend
 npm install
+```
 
-# Backend
+**Backend:**
+```bash
 cd ../backend
 npm install
+```
 
-Run the application
+### 3. Run the Application
 
-# Frontend
+**Frontend:**
+```bash
 cd frontend
 npm run dev
+```
 
-# Backend
+**Backend:**
+```bash
 cd backend
 npm run dev
-The app runs on:
-Frontend → http://localhost:5173
-Backend → http://localhost:8000
-🔑 Environment Variables
-Frontend
-Variable	Description
-VITE_BACKEND_URL	Backend API base URL
-Backend
-Variable	Description
-NODE_ENV	Application environment
-PORT	Server port
-MONGO_URI	MongoDB connection string
-JWT_SECRET	JWT signing key
-JWT_EXPIRE	Token expiration
-MAX_FILE_SIZE	Upload limit
-KIT_ENDPOINT	ImageKit URL
-KIT_PUBLIC_KEY	ImageKit public key
-KIT_PRIVATE_KEY	ImageKit private key
-GEMINI_API_KEY	Gemini API key
-Project Structure
-├── README.md
-├── frontend
-├── backend
-└── package.json
+```
 
-# License
+The app runs on:
+- **Frontend:** http://localhost:5173
+- **Backend:** http://localhost:8000
+
+---
+
+## Environment Variables
+
+### Frontend
+
+| Variable | Description |
+|----------|-------------|
+| `VITE_BACKEND_URL` | Backend API base URL |
+
+### Backend
+
+| Variable | Description |
+|----------|-------------|
+| `NODE_ENV` | Application environment |
+| `PORT` | Server port |
+| `MONGO_URI` | MongoDB connection string |
+| `JWT_SECRET` | JWT signing key |
+| `JWT_EXPIRE` | Token expiration |
+| `MAX_FILE_SIZE` | Upload limit |
+| `KIT_ENDPOINT` | ImageKit URL |
+| `KIT_PUBLIC_KEY` | ImageKit public key |
+| `KIT_PRIVATE_KEY` | ImageKit private key |
+| `GEMINI_API_KEY` | Gemini API key |
+
+---
+
+## Project Structure
+
+```
+├── README.md
+├── frontend/
+├── backend/
+└── package.json
+```
+
+---
+
+## License
 
 This project is licensed under the MIT License — you are free to use, modify, and distribute it with attribution.
